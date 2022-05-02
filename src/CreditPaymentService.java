@@ -1,11 +1,6 @@
 public class CreditPaymentService {
     public int calculate(int creditSum, int period) {
-        float yearInterest = 0;
-        if (period < 4) {
-            yearInterest = 9.99F;
-        } else {
-            yearInterest = 15;
-        }
+        float yearInterest = 9.99F;
         float monthInterest = yearInterest / 100 / 12;
         int month = period * 12;
         float x = 1 + monthInterest;
